@@ -30,6 +30,7 @@ def token_required(f):
     @wraps(f)
     def decorator(*args, **kwargs):
         token = None
+        current_user = None
         if request.cookies:
             token = request.cookies.get('token')
             if token:
