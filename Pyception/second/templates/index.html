@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF challenge</title>
+</head>
+
+<body>
+    <h2>Welcome to my Print what you Type Page</h2>
+
+    <p>Your input should be in "Double Quote"</p>
+    <form action="/" method="post">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Input :</label>
+            <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" name="text"
+                placeholder="Enter your text here">
+        </div>
+        <button type="submit" class="btn btn-primary mb-3">submit</button>
+    </form>
+    <br>
+    <div>
+        {% if output is defined %}
+        {{ output }} <br />
+        {% endif%}
+    </div>
+</body>
+
+</html>
