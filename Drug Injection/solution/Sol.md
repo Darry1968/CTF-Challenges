@@ -1,4 +1,4 @@
-## Drug Injection Challenge Solver
+## Drug Injection Challenge Solution
 
 ### Introduction
 This script is designed to solve the Drug Injection challenge, which involves SQL injection on a login page.
